@@ -15,59 +15,77 @@ foreach($this->vendor as $key => $val){
 	}
 }
 ?>
-<?php
-foreach($this->vendor as $key => $val){
-	if($key == "js"){
-		foreach($val as $value){
-			echo "<script src='$value'></script>\n";
-		}
-	}
-}
-?>
-<style>
-body, html {
-    height: 100%;
-    background-image: url("<?= $this->vendor['images'][0]['bg']; ?>");
-
-    /* Full height */
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.transparent {
-    border-width: 0px;
-    -webkit-box-shadow: 0px 0px;
-    box-shadow: 0px 0px;
-    background:rgba(255,255,255,0.5);
-    background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
-    background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
-    background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
-}
-</style>
 </head>
 <body>
-<div style="padding-top: 70px;"></div>
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#" style="color:#FFF;"><?=SITENAME;?></a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Tentang Aplikasi</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+<header>
+			
+			<div class="header-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-6 col-6 header-top-left no-padding">
+							<ul>
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+								<li><a href="#"><i class="fa fa-behance"></i></a></li>
+							</ul>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6 col-6 header-top-right no-padding">
+							<ul>
+								<li><a href="tel:+440 012 3654 896"><span class="lnr lnr-phone-handset"></span><span>+440 012 3654 896</span></a></li>
+								<li><a href="mailto:support@colorlib.com"><span class="lnr lnr-envelope"></span><span>support@colorlib.com</span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="logo-wrap">
+				<div class="container">
+					<div class="row justify-content-between align-items-center">
+						<div class="col-lg-4 col-md-4 col-sm-12 logo-left no-padding">
+							<a href="index.html">
+								<img class="img-fluid" src="<?=URL;?>/vendor/assets/img/logo.png" alt="">
+							</a>
+						</div>
+						<div class="col-lg-8 col-md-8 col-sm-12 logo-right no-padding ads-banner">
+							<img class="img-fluid" src="<?=URL;?>/vendor/assets/img/banner-ad.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container main-menu" id="main-menu">
+				<div class="row align-items-center justify-content-between">
+					<nav id="nav-menu-container">
+						<ul class="nav-menu">
+							<li class="menu-active"><a href="index.html">Home</a></li>
+							<li><a href="archive.html">Archive</a></li>
+							<li><a href="category.html">Category</a></li>
+							<li class="menu-has-children"><a href="">Post Types</a>
+							<ul>
+								<li><a href="standard-post.html">Standard Post</a></li>
+								<li><a href="image-post.html">Image Post</a></li>
+								<li><a href="gallery-post.html">Gallery Post</a></li>
+								<li><a href="video-post.html">Video Post</a></li>
+								<li><a href="audio-post.html">Audio Post</a></li>
+							</ul>
+						</li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+					</nav><!-- #nav-menu-container -->
+					<div class="navbar-right">
+						<form class="Search">
+							<input type="text" class="form-control Search-box" name="Search-box" id="Search-box" placeholder="Search">
+							<label for="Search-box" class="Search-box-label">
+								<span class="lnr lnr-magnifier"></span>
+							</label>
+							<span class="Search-close">
+								<span class="lnr lnr-cross"></span>
+							</span>
+						</form>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<div class="site-main-container">
