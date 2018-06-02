@@ -38,11 +38,6 @@
 									<p>
 										<?= $model->isi_berita ?>
 									</p>
-								
-								<div class="navigation-wrap justify-content-between d-flex">
-									<a class="prev" href="#"><span class="lnr lnr-arrow-left"></span>Prev Post</a>
-									<a class="next" href="#">Next Post<span class="lnr lnr-arrow-right"></span></a>
-								</div>
 							</div>
 						</div>
 						<!-- End single-post Area -->

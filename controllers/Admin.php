@@ -7,6 +7,7 @@ use models\Berita_Model;
 
 use controllers\admin\Berita as Berita;
 use controllers\admin\Category as Category;
+use controllers\admin\Berkas as Berkas;
 
 class Admin extends Controller {
 	function __construct(){
@@ -35,6 +36,16 @@ class Admin extends Controller {
 
     function actionCategory($action = false, $param = false){
         $controller = new Category;
+        if($action == false){
+            $controller->actionIndex();
+        }else{
+            $action = "action".ucfirst($action);
+            $controller->$action($param);
+        }
+    }
+
+    function actionBerkas($action = false, $param = false){
+        $controller = new Berkas;
         if($action == false){
             $controller->actionIndex();
         }else{

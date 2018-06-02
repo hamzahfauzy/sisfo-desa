@@ -61,14 +61,15 @@ foreach($this->vendor as $key => $val){
 					<nav id="nav-menu-container">
 						<ul class="nav-menu">
 							<li class="menu-active"><a href="<?= URL ?>">Home</a></li>
-							<li><a href="<?= URL ?>/category">Category</a></li>
-							<li class="menu-has-children"><a href="">Post Types</a>
+							<li><a href="<?= URL ?>/index/berita">Berita</a></li>
+							<li class="menu-has-children"><a href="<?= URL ?>/index/category">Category</a>
 							<ul>
-								<li><a href="image-post.html">Image Post</a></li>
+								<?php foreach ($category->data as $key => $value): ?>
+									<li><a href="<?= URL ?>/category"><?= $value->nama_category ?></a></li>
+								<?php endforeach ?>
 							</ul>
+							<li><a href="<?= URL ?>/index/download">Download</a></li>
 						</li>
-						<li><a href="about.html">About</a></li>
-						<li><a href="contact.html">Contact</a></li>
 					</ul>
 					</nav><!-- #nav-menu-container -->
 					<div class="navbar-right">
