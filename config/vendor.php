@@ -17,8 +17,8 @@ return [
 		"js"=>[
 			// URL."/vendor/jquery/jquery.js",
 			// URL."/vendor/bootstrap/js/bootstrap.min.js",
-			// URL."/vendor/jquery/datatable.js",
-			// URL."/vendor/jquery/datatable.bootstrap.min.js",
+			URL."/vendor/jquery/datatable.js",
+			URL."/vendor/jquery/datatable.bootstrap.min.js",
 			URL."/vendor/assets/js/vendor/jquery-2.2.4.min.js",
 			"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js",
 			URL."/vendor/assets/js/vendor/bootstrap.min.js",
